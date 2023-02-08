@@ -10,6 +10,6 @@ const CommandsHanlder = new Composer<Context>()
 CommandsHanlder.command('start', handleStart)
 CommandsHanlder.command('help', handleHelp)
 CommandsHanlder.command('language', handleLanguage)
-CommandsHanlder.command(['spin', 'Spin', 'SPIN'], handlequery)
+CommandsHanlder.command(['proposal', 'Proposal', 'PROPOSAL'], handlequery)
 
 export default CommandsHanlder

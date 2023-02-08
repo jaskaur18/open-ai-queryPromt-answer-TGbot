@@ -12,7 +12,7 @@ const openai = new OpenAIApi(configuration)
 export const generateResponse = async (prompt: string) => {
   try {
     const _prompt =
-      "Rewrite The Content Below WIth Different Words And Variation Of Tone But Keep The Context Of The Text Without Altering The Meaning Keep Links And Username Don't Remove Them And Make New Response Each Time:\n\n" +
+      'Rewrite The Content Below WIth Different Words And Variation Of Tone And Synonyms But Keep The Context Of The Text Without Altering The Meaning Keep Links And Username Don\'t Remove Them And Make New Response From The Same Query Each Time:\n\n' +
       prompt
     return openai.createCompletion(
       {
