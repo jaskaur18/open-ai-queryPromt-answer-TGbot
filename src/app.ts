@@ -12,12 +12,11 @@ import configurefluent from '@/middlewares/configurefluent'
 import env from '@/helpers/env'
 import isAdmin from '@/middlewares/isAdmin'
 import languageMenu from '@/menus/language'
-import startMongo from '@/helpers/startMongo'
 
 async function runApp() {
   console.log('Starting app...')
   // Mongo
-  await startMongo()
+  // await startMongo()
   console.log('Mongo connected')
   bot
     // Middlewares

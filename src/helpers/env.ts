@@ -7,7 +7,6 @@ dotenv.config()
 // eslint-disable-next-line node/no-process-env
 export default cleanEnv(process.env, {
   TOKEN: str(),
-  MONGO: str(),
 
   OPENAI_API_KEY: str(),
 
